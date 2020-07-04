@@ -14,8 +14,8 @@ The model can  be used for getting embeddings to use on a down-stream task such 
 >>> from transformers import pipeline
 >>> from transformers import AutoTokenizer, AutoModelWithLMHead
 
->>> tokenizer = AutoTokenizer.from_pretrained("MoseliMotsoehli/zuBERT")
->>> model = AutoModelWithLMHead.from_pretrained("MoseliMotsoehli/zuBERT")
+>>> tokenizer = AutoTokenizer.from_pretrained("MoseliMotsoehli/zuBERTa")
+>>> model = AutoModelWithLMHead.from_pretrained("MoseliMotsoehli/zuBERTa")
 >>> unmasker = pipeline('fill-mask', model=model, tokenizer=tokenizer)
 >>> unmasker("Ntshopotse <mask> e godile.")
 ```
